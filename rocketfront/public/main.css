@@ -36,9 +36,9 @@ div.app-grid {
 	right: 0;
 	bottom: 0;
 	display: grid !important;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
-	grid-template-areas: "header header header" "sidebar main main";
+	grid-template-areas: "header header" "sidebar main";
 }
 
 div.grid-zone.grid-zone--header {
