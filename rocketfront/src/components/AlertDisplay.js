@@ -66,16 +66,7 @@ class AlertDisplay extends Component {
 						<div className="alert-summary">
 							<h1>{this.props.alerts.length}</h1> Total Alerts
 						</div>
-						{/* <div className="rux-form-field-div-search">
-							<div className="rux-form-field search">
-								<input
-									className="rux-form-field__text-input search"
-									placeholder="Search by category"
-									type="search"
-									onChange={this.handleChange}
-								/>
-							</div>
-						</div> */}
+
 						<div class="alert-filter">
 							<label class="classy" for="categoryFilter">
 								Category Filter

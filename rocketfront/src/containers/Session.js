@@ -6,45 +6,13 @@ import { fetchLoginStatus } from "../redux/actions/UsersActions";
 
 class Session extends Component {
 	render() {
-		// if (this.props.errors.length !== 0) {
-		// 	// this.props.errors.map((e) => {
-		// 	return (
-		// 		<div className="rux-modal-container">
-		// 			<rux-modal
-		// 				title="error"
-		// 				message={this.props.errors}
-		// 				confirmText="Ok"
-		// 				denyText="Cancel"
-		// 				customEvent="listen-for-me"
-		// 			>
-		// 				<div className="rux-modal__titlebar">
-		// 					<h1>Error</h1>
-		// 				</div>
-		// 				<div className="rux-modal__content">
-		// 					<div className="rux-modal__message">{this.props.errors}</div>
-		// 					<div className="rux-button-group">
-		// 						<rux-button data-value="false" tabindex="-1">
-		// 							Cancel
-		// 						</rux-button>
-		// 						<rux-button data-value="true" tabindex="0">
-		// 							OK
-		// 						</rux-button>
-		// 					</div>
-		// 				</div>
-		// 			</rux-modal>
-		// 		</div>
-		// 	);
-		// 	// });
-		// }
 		if (this.props.errors.length !== 0) {
 			return (
 				<rux-modal
 					title="Error"
 					message={this.props.errors[0]}
 					confirmText="Ok"
-				>
-					// denyText="Cancel" // customEvent="listen-for-me">
-				</rux-modal>
+				></rux-modal>
 			);
 		} else {
 			return (

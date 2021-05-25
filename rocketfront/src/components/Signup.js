@@ -6,7 +6,6 @@ import { signup } from "../redux/actions/UsersActions";
 class Signup extends Component {
 	state = {
 		username: "",
-		// email: "",
 		password: "",
 		passwordConfirmation: "",
 	};
@@ -36,18 +35,6 @@ class Signup extends Component {
 		});
 		this.props.history.push("/main");
 	};
-
-	// handleErrors = () => {
-	// 	return (
-	// 		<div className="home">
-	// 			<ul>
-	// 				{this.state.errors.map((error) => {
-	// 					return <li key={error}>{error}</li>;
-	// 				})}
-	// 			</ul>
-	// 		</div>
-	// 	);
-	// };
 
 	render() {
 		if (this.props.errors) {

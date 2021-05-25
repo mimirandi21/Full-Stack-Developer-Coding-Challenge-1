@@ -13,44 +13,15 @@ class Main extends Component {
 			loggedIn: false,
 		};
 	}
-	// componentDidMount = () => {
-	// 	this.props.fetchLoginStatus();
-	// };
 
 	render() {
 		if (this.props.errors) {
-			// this.props.errors.map((e) => {
-			// return (
-			// 	<div className="rux-modal-container">
-			// 		<rux-modal
-			// 			title="error"
-			// 			message={this.props.errors}
-			// 			confirmText="Ok"
-			// 			denyText="Cancel"
-			// 			customEvent="listen-for-me"
-			// 		>
-			// 			<div className="rux-modal__titlebar">
-			// 				<h1>Error</h1>
-			// 			</div>
-			// 			<div className="rux-modal__content">
-			// 				<div className="rux-modal__message">{this.props.errors}</div>
-			// 				<div className="rux-button-group">
-			// 					<rux-button data-value="false" tabindex="-1">
-			// 						Cancel
-			// 					</rux-button>
-			// 					<rux-button data-value="true" tabindex="0">
-			// 						OK
-			// 					</rux-button>
-			// 				</div>
-			// 			</div>
-			// 		</rux-modal>
-			// 	</div>
-			// );
-			// });
 			return (
-				<rux-modal title="Error" message={this.props.errors} confirmText="Ok">
-					// denyText="Cancel" // customEvent="listen-for-me">
-				</rux-modal>
+				<rux-modal
+					title="Error"
+					message={this.props.errors}
+					confirmText="Ok"
+				></rux-modal>
 			);
 		}
 		return (

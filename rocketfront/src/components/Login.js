@@ -8,9 +8,7 @@ class Login extends Component {
 		super(props);
 		this.state = {
 			username: "",
-			// email: "",
 			password: "",
-			// error: "",
 		};
 	}
 
@@ -31,18 +29,6 @@ class Login extends Component {
 		};
 		this.props.login({ user }, this.handleSuccess);
 	};
-
-	// handleErrors = () => {
-	// 	return (
-	// 		<div>
-	// 			<ul>
-	// 				{this.state.error.map((error) => {
-	// 					return <li key={error}>{error}</li>;
-	// 				})}
-	// 			</ul>
-	// 		</div>
-	// 	);
-	// };
 
 	handleSuccess = () => {
 		this.setState({
@@ -69,7 +55,7 @@ class Login extends Component {
 						<div className="rux-form-field">
 							<label for="input__text">Username</label>
 							<input
-								id="input__text"
+								id="input__text username"
 								class="rux-input"
 								required
 								placeholder="username"
@@ -79,23 +65,11 @@ class Login extends Component {
 								onChange={this.handleChange}
 							/>
 						</div>
-						{/* <div className="rux-form-field">
-							<label for="input__text">Email</label>
-							<input
-								id="input__text"
-								class="rux-input"
-								required
-								placeholder="email"
-								type="text"
-								name="email"
-								value={this.state.email}
-								onChange={this.handleChange}
-							/>
-						</div> */}
+
 						<div className="rux-form-field">
 							<label for="input__text">Password</label>
 							<input
-								id="input__text"
+								id="input__text password"
 								class="rux-input"
 								required
 								placeholder="password"
@@ -131,7 +105,6 @@ class Login extends Component {
 
 const mSTP = (state) => {
 	return {
-		// loggedIn: state.users.loggedIn,
 		errors: state.users.errors,
 	};
 };

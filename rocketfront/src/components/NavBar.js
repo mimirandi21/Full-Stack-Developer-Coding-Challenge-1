@@ -53,10 +53,4 @@ class NavBar extends Component {
 	}
 }
 
-// const mSTP = (state) => {
-// 	return {
-// 		user: state.users.currentUser,
-// 	};
-// };
 export default connect(null, { logout })(NavBar);
-// export default connect(mSTP)(NavBar);

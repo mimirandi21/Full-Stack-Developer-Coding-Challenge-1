@@ -33,10 +33,6 @@ class SatDisplay extends Component {
 	};
 
 	filterContacts() {
-		// if (this.state.search === "" || !this.state.search) {
-		// 	return this.props.satellites;
-		// }
-
 		return this.props.satellites.filter((s) => {
 			return (
 				s.contactName.toString().includes(this.state.search) &&
@@ -87,9 +83,6 @@ class SatDisplay extends Component {
 							);
 						})}
 
-						{/* <div className="contact-summary">
-							<h1>{this.findDistinctStates()}</h1> Contact States
-						</div> */}
 						<div className="rux-form-field-div-search">
 							<div className="rux-form-field search">
 								<input
