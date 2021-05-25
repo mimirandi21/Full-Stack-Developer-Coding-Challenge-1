@@ -88,7 +88,7 @@ class Signup extends Component {
 						<div className="rux-form-field">
 							<label for="input__text">Username</label>
 							<input
-								id="input__text"
+								id="input__text username"
 								class="rux-input"
 								required
 								placeholder="username"
@@ -98,23 +98,11 @@ class Signup extends Component {
 								onChange={this.handleChange}
 							/>
 						</div>
-						{/* <div className="rux-form-field">
-							<label for="input__text">Email</label>
-							<input
-								id="input__text"
-								class="rux-input"
-								required
-								placeholder="email"
-								type="text"
-								name="email"
-								value={this.state.email}
-								onChange={this.handleChange}
-							/>
-						</div> */}
+
 						<div className="rux-form-field">
 							<label for="input__text">Password</label>
 							<input
-								id="input__text"
+								id="input__text password"
 								class="rux-input"
 								required
 								placeholder="password"
@@ -127,7 +115,7 @@ class Signup extends Component {
 						<div className="rux-form-field">
 							<label for="input__text">Password Confirmation</label>
 							<input
-								id="input__text"
+								id="input__text passwordConfirm"
 								class="rux-input"
 								required
 								placeholder="passwordConfirmation"
